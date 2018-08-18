@@ -1,16 +1,46 @@
 {
-  "name": "draft-js-resizeable-plugin",
-  "version": "2.0.6",
-  "description": "Resizeable Plugin for DraftJS",
+  "_from": "draft-js-resizeable-plugin",
+  "_id": "draft-js-resizeable-plugin@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-tNe5SWdNT1V1wv9sV+UQGJL/equ/ocSxj5T+LfA1lhttzNYY33BSJiNZGQZWrPxaWfNFuMZG7K4Yjl2Gh0Veeg==",
+  "_location": "/draft-js-resizeable-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "draft-js-resizeable-plugin",
+    "name": "draft-js-resizeable-plugin",
+    "escapedName": "draft-js-resizeable-plugin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/draft-js-resizeable-plugin/-/draft-js-resizeable-plugin-2.0.1.tgz",
+  "_shasum": "11183d4f681f0bf305b0bff55e42d91ba32aaae9",
+  "_spec": "draft-js-resizeable-plugin",
+  "_where": "/home/ubuntu/admin",
   "author": {
     "name": "Benjamin Kniffler",
     "email": "benjamin@kniffler.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/draft-js-plugins/draft-js-plugins.git"
+  "bugs": {
+    "url": "https://github.com/draft-js-plugins/draft-js-plugins/issues"
   },
-  "main": "lib/index.js",
+  "bundleDependencies": false,
+  "dependencies": {
+    "decorate-component-with-props": "^1.0.2",
+    "find-with-regex": "^1.0.2",
+    "immutable": "~3.7.4",
+    "prop-types": "^15.5.8",
+    "union-class-names": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "Resizeable Plugin for DraftJS",
+  "homepage": "https://github.com/draft-js-plugins/draft-js-plugins#readme",
   "keywords": [
     "editor",
     "wysiwyg",
@@ -21,23 +51,23 @@
     "widget",
     "react-component"
   ],
-  "scripts": {
-    "clean": "../node_modules/.bin/rimraf lib",
-    "build": "npm run clean && npm run build:js",
-    "build:js": "WEBPACK_CONFIG=$(pwd)/webpack.config.js BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ../node_modules/.bin/babel --out-dir='lib' --ignore='__test__/*' src",
-    "prepublish": "npm run build"
-  },
   "license": "MIT",
-  "dependencies": {
-    "decorate-component-with-props": "^1.0.2",
-    "find-with-regex": "^1.1.3",
-    "union-class-names": "^1.0.0",
-    "immutable": "~3.7.4",
-    "prop-types": "^15.5.8"
-  },
+  "main": "lib/index.js",
+  "name": "draft-js-resizeable-plugin",
   "peerDependencies": {
     "draft-js": "^0.10.1",
     "react": "^15.5.0 || ^16.0.0-rc",
     "react-dom": "^15.5.0 || ^16.0.0-rc"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draft-js-plugins/draft-js-plugins.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build:js",
+    "build:js": "WEBPACK_CONFIG=$(pwd)/webpack.config.js BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ../node_modules/.bin/babel --out-dir='lib' --ignore='__test__/*' src",
+    "clean": "../node_modules/.bin/rimraf lib",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.1"
 }
